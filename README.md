@@ -2,7 +2,6 @@
 ```shell
 make run
 ```
-
 ****
 
 **1. Start Server**
@@ -20,3 +19,5 @@ go run client.go
 ```shell
 sh curl.sh
 ```
+
+**Video:** [https://www.youtube.com/watch?v=x7B5CwcxCDI](Two-Way SSL Mutual Authentication)
