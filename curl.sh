@@ -1,4 +1,4 @@
-curl -v \
+curl -v -k \
     --cert ./cert/client-cert-signed.pem \
     --key ./cert/client-key.pem \
     --cacert ./cert/ca-cert.pem \
