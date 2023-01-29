@@ -1,4 +1,4 @@
-COMMON_NAME=ascend.truemoney.local
+COMMON_NAME=my_cert
 
 run:
 	rm -rf ./cert/*.pem
@@ -40,4 +40,4 @@ _sign_cert:
 		-out cert/$(FOR)-cert-signed.pem \
 		-days 365 \
 		-CAcreateserial \
-		-extfile cert/cert.conf
+		-extfile cert/config/cert.conf
