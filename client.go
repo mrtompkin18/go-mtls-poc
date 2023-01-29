@@ -32,10 +32,12 @@ func main() {
 		Certificates:       []tls.Certificate{cert},
 		RootCAs:            caCertPool,
 		InsecureSkipVerify: false,
+		// set to false for ignore client to verify certification of server
+		// if you want to verify it, may install CA cert in your computer
 	}
 
 	transport := &http.Transport{TLSClientConfig: tlsConfig}
-	
+
 	client := &http.Client{Transport: transport}
 
 	r, err := client.Get("https://localhost:8080/hello")
